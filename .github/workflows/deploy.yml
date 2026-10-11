@@ -42,17 +42,33 @@ jobs:
           cache: npm
           cache-dependency-path: quartz/package-lock.json
 
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Configure Quartz
+        env:
+          BASE_URL: ${{ steps.pages.outputs.base_url }}
         run: |
           cp vault/.quartz/quartz.config.yaml quartz/quartz.config.yaml
-          base_url="${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
-          sed -i "s|^  baseUrl: .*|  baseUrl: ${base_url,,}|" quartz/quartz.config.yaml
+          sed -i "s|^  baseUrl: .*|  baseUrl: ${BASE_URL#*://}|" quartz/quartz.config.yaml
 
-      - name: Install Quartz and plugins
+      - name: Install Quartz
         working-directory: quartz
-        run: |
-          npm ci
-          npx quartz plugin restore
+        run: npm ci
+
+      # Restoring builds each plugin from source, which is slow; cache the result.
+      - name: Cache Quartz plugins
+        id: plugin-cache
+        uses: actions/cache@v4
+        with:
+          path: quartz/.quartz/plugins
+          key: quartz-plugins-${{ runner.os }}-${{ hashFiles('quartz/quartz.lock.json') }}
+
+      - name: Restore Quartz plugins
+        if: steps.plugin-cache.outputs.cache-hit != 'true'
+        working-directory: quartz
+        run: npx quartz plugin restore
 
       - name: Build site
         working-directory: quartz

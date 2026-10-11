@@ -2,6 +2,7 @@
 title: "GPU Glossary"
 aliases:
   - "Home"
+  - "index"
 tags:
   - gpu-glossary
 source: https://modal.com/gpu-glossary

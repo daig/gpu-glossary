@@ -1,0 +1,74 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+env:
+  # Quartz v5.0.0
+  QUARTZ_REF: ab346fa66a895e12d63a308e70ce330ba795822a
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out vault
+        uses: actions/checkout@v4
+        with:
+          path: vault
+          fetch-depth: 0 # full history for created/modified dates
+
+      - name: Check out Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: ${{ env.QUARTZ_REF }}
+          path: quartz
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: quartz/package-lock.json
+
+      - name: Configure Quartz
+        run: |
+          cp vault/.quartz/quartz.config.yaml quartz/quartz.config.yaml
+          base_url="${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
+          sed -i "s|^  baseUrl: .*|  baseUrl: ${base_url,,}|" quartz/quartz.config.yaml
+
+      - name: Install Quartz and plugins
+        working-directory: quartz
+        run: |
+          npm ci
+          npx quartz plugin restore
+
+      - name: Build site
+        working-directory: quartz
+        run: npx quartz build -d ../vault
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

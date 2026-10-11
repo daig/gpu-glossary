@@ -1,0 +1,55 @@
+---
+title: "Contributors"
+tags:
+  - gpu-glossary
+source: https://modal.com/gpu-glossary/contributors
+---
+
+# Contributors
+
+This list is incomplete; you can help by [expanding it](https://github.com/modal-labs/gpu-glossary).
+
+### Authors
+
+- [Charles Frye](https://twitter.com/charles_irl) wrote the majority of the material and takes full responsibility for any errors.
+- [Matthew Nappo](https://www.linkedin.com/in/mattnappo/) wrote the initial internal "GPU Glossary" document from which this sprung.
+- [Harmya Bhatt](https://twitter.com/racerfunction) of [Tensara](https://tensara.org/) co-authored the material on [[Performance|performance]].
+- [Philip Fabianek](https://www.linkedin.com/in/philip-fabianek/) contributed the articles on [[cuBLAS]] and [[cuDNN]].
+- [Debashish Chakraborty](https://github.com/debashishc) co-authored the article on [[CuTe DSL]]
+- [Md Rashad Al Hasan Rony](https://www.rashad.ai/#about-me) co-authored the article on [[Memory Coalescing|memory coalescing]].
+- [Christopher Fleetwood](https://fleetwood.dev/) contributed the articles on [[Warpgroup|warpgroups]] and [[Scoreboard Stall|scoreboard stalls]].
+- [You](https://github.com/modal-labs/gpu-glossary) can contribute to keep the glossary up-to-date and erratum-free!
+
+### Design
+
+- [Sona Dolasia](https://twitter.com/teenychairs) designed the glossary.
+- [Anna Carey](https://twitter.com/anna_carey) implemented the design and UX.
+
+### Review
+
+- [Abhinav Upadhyay](https://twitter.com/abhi9u) of [Coding Confessions](https://blog.codingconfessions.com/) and [`@Pauleonix`](https://github.com/pauleonix) of the [GPU MODE Discord](https://discord.gg/gpumode), from outside Modal, provided valuable external technical review of the first version of the glossary. We particularly thank Abhinav for his perspective on comparisons with CPUs and Pauleonix for his detailed insights on GPU hardware internals.
+- [Alex Zhang](https://alexzhang13.github.io/), [David Wang](https://www.linkedin.com/in/dcw02/), [Mark Saroufim](https://twitter.com/marksaroufim), and [Mit Kotak](https://mitkotak.github.io/) reviewed the material on [[Performance|performance]].
+- [Akshat Bubna](https://twitter.com/akshat_b), [Nathan Wang](https://www.linkedin.com/in/nathan-r-wang/), and [Colin Weld](https://www.linkedin.com/in/colin-weld/) gave technical feedback on early drafts of the glossary.
+- [Eric Zhang](https://twitter.com/ekzhang1) and [Ro Arepally](https://twitter.com/rarepally) reviewed the design and implementation.
+
+### Acknowledgements
+
+- [Mark Saroufim](https://twitter.com/marksaroufim) and Andreas Kopf for bringing together the [GPU MODE Discord community](https://discord.gg/gpumode)
+- [Fabien Sanglard](https://twitter.com/fabynou) for authoring an [excellent history of CUDA GPUs](https://fabiensanglard.net/cuda)
+- Jen-Hsun Huang for leading an organization that makes some pretty decent chips
+
+### Error Correction
+
+We thank the following GPU enthusiasts who came in through the world wide web to correct errors:
+
+- [Alex Zhang](https://alexzhang13.github.io/)
+- [Ayoub Ghriss](https://github.com/ayghri)
+- [Erik Schultheis](https://www.linkedin.com/in/erik-schultheis-606a52119/)
+- Ismail Zaidi
+- [Michal Nawrot](https://github.com/michalnawrot)
+- [Nicolas Blin](https://www.nicolas-blin.fr/)
+- [Tony Wang](https://github.com/tonywangs)
+
+---
+
+← [[Register Pressure]]

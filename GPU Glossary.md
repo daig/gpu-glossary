@@ -1,0 +1,98 @@
+---
+title: "GPU Glossary"
+aliases:
+  - "Home"
+tags:
+  - gpu-glossary
+source: https://modal.com/gpu-glossary
+---
+
+# GPU Glossary
+
+## Table of Contents
+
+- [[GPU Glossary|Home]]
+    - [[README]]
+    - [[Device Hardware]]
+        - [[CUDA (Device Architecture)]]
+        - [[Streaming Multiprocessor]] `SM`
+        - [[Core]]
+        - [[Special Function Unit]] `SFU`
+        - [[Load-Store Unit|Load/Store Unit]] `LSU`
+        - [[Warp Scheduler]]
+        - [[CUDA Core]]
+        - [[Tensor Core]]
+        - [[Tensor Memory Accelerator]] `TMA`
+        - [[Streaming Multiprocessor Architecture]]
+        - [[Texture Processing Cluster]] `TPC`
+        - [[Graphics-GPU Processing Cluster|Graphics/GPU Processing Cluster]] `GPC`
+        - [[Register File]]
+        - [[L1 Data Cache]]
+        - [[Tensor Memory]]
+        - [[GPU RAM]]
+    - [[Device Software]]
+        - [[CUDA (Programming Model)]]
+        - [[Streaming ASSembler]] `SASS`
+        - [[Parallel Thread eXecution]] `PTX`
+        - [[Compute Capability]]
+        - [[Thread]]
+        - [[Warp]]
+        - [[Warpgroup]]
+        - [[Cooperative Thread Array]]
+        - [[Kernel]]
+        - [[Thread Block]]
+        - [[Thread Block Grid]]
+        - [[Thread Hierarchy]]
+        - [[Memory Hierarchy]]
+        - [[Registers]]
+        - [[Shared Memory]]
+        - [[Global Memory]]
+        - [[CUDA Tile Programming Model]]
+    - [[Host Software]]
+        - [[CUDA (Software Platform)]]
+        - [[CUDA C++ (programming language)]]
+        - [[NVIDIA GPU Drivers]]
+        - [[nvidia.ko]]
+        - [[CUDA Driver API]]
+        - [[libcuda.so]]
+        - [[NVIDIA Management Library]] `NVML`
+        - [[libnvml.so]]
+        - [[nvidia-smi]]
+        - [[CUDA Runtime API]]
+        - [[libcudart.so]]
+        - [[CUDA Graphs]]
+        - [[NVIDIA CUDA Compiler Driver]] `nvcc`
+        - [[NVIDIA Runtime Compiler]]
+        - [[NVIDIA CUDA Profiling Tools Interface]] `CUPTI`
+        - [[NVIDIA Nsight Systems]]
+        - [[CUDA Binary Utilities]]
+        - [[cuBLAS]]
+        - [[cuDNN]]
+        - [[CUTLASS]]
+        - [[CuTe]]
+        - [[CuTe DSL]]
+    - [[Performance]]
+        - [[Performance Bottleneck]]
+        - [[Roofline Model]]
+        - [[Compute-bound]]
+        - [[Memory-bound]]
+        - [[Arithmetic Intensity]]
+        - [[Overhead]]
+        - [[Little's Law]]
+        - [[Memory Bandwidth]]
+        - [[Arithmetic Bandwidth]]
+        - [[Latency Hiding]]
+        - [[Warp Execution State]]
+        - [[Active Cycle]]
+        - [[Occupancy]]
+        - [[Pipe Utilization]]
+        - [[Peak Rate]]
+        - [[Issue Efficiency]]
+        - [[Streaming Multiprocessor Utilization]]
+        - [[Warp Divergence]]
+        - [[Scoreboard Stall]]
+        - [[Branch Efficiency]]
+        - [[Memory Coalescing]]
+        - [[Bank Conflict]]
+        - [[Register Pressure]]
+    - [[Contributors]]

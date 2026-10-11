@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "ef0357d468bda527",
+    "type": "split",
+    "children": [
+      {
+        "id": "ae26fbcc19cb1b2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86d492917d056b6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Device Software/CUDA Tile Programming Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CUDA Tile Programming Model"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "05c795753de48456",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7e748eb1e9b7eee",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9295c7b796d0fa6a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "36c0ec20de776832",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "772470ac0d3544b2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "de481f6332d7a70f",
+    "type": "split",
+    "children": [
+      {
+        "id": "abfbc49b247e020b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92320f308ce1026b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Device Software/CUDA Tile Programming Model.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for CUDA Tile Programming Model"
+            }
+          },
+          {
+            "id": "f2fc71c4bfa1c8fb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Device Software/CUDA Tile Programming Model.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from CUDA Tile Programming Model"
+            }
+          },
+          {
+            "id": "76222542a6b9c826",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "24bec5f9fbc10805",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "844d66949aabb2c6",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Device Software/CUDA Tile Programming Model.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of CUDA Tile Programming Model"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "86d492917d056b6b",
+  "lastOpenFiles": [
+    "Device Software/CUDA (Programming Model).md",
+    "Device Software/Cooperative Thread Array.md",
+    "Device Software/Compute Capability.md",
+    "Device Hardware/Texture Processing Cluster.md",
+    "Device Hardware/Tensor Memory.md",
+    "Device Hardware/Streaming Multiprocessor Architecture.md",
+    "Device Hardware/Special Function Unit.md",
+    "Device Hardware/Register File.md",
+    "Device Hardware/Graphics-GPU Processing Cluster.md",
+    "Device Hardware/CUDA Core.md",
+    "Device Hardware/Core.md"
+  ]
+}
